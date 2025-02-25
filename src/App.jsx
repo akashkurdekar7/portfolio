@@ -13,7 +13,7 @@ const App = () => {
       <main className=" bg-bgc">
         <Home />
         <About />
-        <Skills />
+        {/* <Skills /> */}
         <Edu />
       </main>
       <Footer />
