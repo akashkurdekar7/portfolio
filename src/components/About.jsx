@@ -1,27 +1,27 @@
 import React from "react";
-import profile2 from "../assets/IMG_5445.jpeg";
+import profile from "../assets/IMG_5445.jpeg";
 
 const About = () => {
   return (
-    <section id="about" className="py-16 text-center bg-bgc">
-      {/* Heading Section */}
-      <h1 className="text-4xl font-bold text-gray-800">Introducing</h1>
-      <h1 className="mb-6 text-6xl font-signature text-primary">About Me</h1>
+    <section
+      id="about"
+      className="relative z-50 flex flex-col justify-center text-center bg-center bg-no-repeat bg-cover "
+      style={{ backgroundImage: `url(${profile})` }}
+    >
+      <div className="absolute inset-0 bg-black bg-opacity-10"></div>
 
-      {/* Content Section */}
-      <div className="flex flex-col items-center max-w-4xl gap-10 px-6 mx-auto md:flex-row">
-        {/* Profile Image */}
-        <img
-          src={profile2}
-          alt="Profile"
-          className="object-cover shadow-lg w-72 h-72 md:w-80 md:h-80 rounded-xl"
-        />
+      <h1 className="absolute transform -translate-x-1/2 text-8xl top-24 font-signature text-primary left-1/2 w-max">
+        Introducing
+      </h1>
 
-        {/* Description */}
-        <p className="max-w-2xl mx-auto text-lg leading-relaxed text-gray-700">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias,
-          autem! Alias placeat incidunt veritatis, necessitatibus odio voluptas?
-          Odit, neque beatae.
+      <div className="absolute max-w-sm p-5 bg-white right-[5rem] top-[36%] max-h-sm bg-opacity-50 rounded-md transition-all duration-300 ease-in-out cursor-pointer hover:bg-black hover:bg-opacity-100 hover:text-white">
+        <h1 className="mt-2 text-4xl ">About Me</h1>
+        <p className="mt-4 text-lg leading-relaxed text-justify">
+          I’m a Full Stack Developer skilled in MERN Stack, Java, and scalable
+          web solutions, building high-performance applications. Passionate
+          about innovation, problem-solving, and creativity, I thrive on
+          challenges whether in coding, performance optimization, or cricket
+          strategy.
         </p>
       </div>
     </section>

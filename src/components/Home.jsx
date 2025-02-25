@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="flex flex-col items-center justify-center w-full h-screen pt-[80px] gap-4 py-16"
+      className="flex flex-col items-center justify-center w-full h-screen pt-[80px] gap-4 "
     >
       <h1 className="text-6xl text-center font-signature text-primary md:text-7xl lg:text-8xl xl:text-9xl">
         Akash Kurdekar

@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import About from "./components/About";
+import Skills from "./components/Skills";
+import Edu from "./components/Edu";
 
 const App = () => {
   return (
@@ -11,6 +13,8 @@ const App = () => {
       <main className=" bg-bgc">
         <Home />
         <About />
+        <Skills />
+        <Edu />
       </main>
       <Footer />
     </>

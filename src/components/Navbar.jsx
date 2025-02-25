@@ -17,9 +17,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed text-white font-bold shadow-md transition-all duration-300 ease-in-out ${
+      className={`z-50 fixed text-white font-bold shadow-md transition-all duration-300 ease-in-out ${
         scrolled
-          ? "top-0 left-0 w-full md:w-[100%] bg-primary p-2 rounded-none"
+          ? "top-0 left-0 w-full md:w-[100%] bg-bgc p-2 rounded-none"
           : "top-2 left-1/2 transform -translate-x-1/2 w-[70%] md:w-[80%] bg-primary p-4 rounded-lg"
       }`}
     >
