@@ -5,8 +5,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-2 left-1/2 transform -translate-x-1/2 w-[70%] bg-primary text-white rounded-lg shadow-md p-7  font-bold">
-      <div className="flex items-center md:justify-center sm:justify-end ">
+    <nav className="fixed top-2 left-1/2 transform -translate-x-1/2 w-[70%] bg-primary text-white rounded-lg shadow-md p-4  font-bold md:w-[80%]">
+      <div className="flex items-center justify-end md:justify-center ">
         <button
           className="text-4xl text-white md:hidden"
           onClick={() => setIsOpen(!isOpen)}
