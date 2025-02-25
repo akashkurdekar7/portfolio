@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-2 left-1/2 transform -translate-x-1/2 w-[90%] bg-primary text-white rounded-lg shadow-md p-4 font-bold">
+    <nav className="fixed top-2 left-1/2 transform -translate-x-1/2 w-[70%] bg-primary text-white rounded-lg shadow-md p-7  font-bold">
       <div className="flex items-center md:justify-center sm:justify-end ">
         <button
           className="text-2xl text-white md:hidden"
