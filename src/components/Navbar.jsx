@@ -15,6 +15,11 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Close menu when a link is clicked
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
+
   return (
     <nav
       className={`z-50 fixed text-white font-bold shadow-md transition-all duration-300 ease-in-out ${
@@ -49,6 +54,7 @@ const Navbar = () => {
               <a
                 href={`#${item.toLowerCase()}`}
                 className="flex justify-end font-mono text-lg hover:text-bgc"
+                onClick={handleLinkClick}
               >
                 {item}
               </a>
