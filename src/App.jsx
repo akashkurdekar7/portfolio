@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Edu from "./components/Edu";
+import Experience from "./components/Experience";
 
 const App = () => {
   return (
@@ -13,8 +14,9 @@ const App = () => {
       <main className=" bg-bgc">
         <Home />
         <About />
-        {/* <Skills /> */}
+        <Skills />
         <Edu />
+        <Experience />
       </main>
       <Footer />
     </>

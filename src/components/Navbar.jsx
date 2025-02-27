@@ -5,7 +5,6 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // Track Scroll Position
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
@@ -15,7 +14,6 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close menu when a link is clicked
   const handleLinkClick = () => {
     setIsOpen(false);
   };
@@ -24,7 +22,7 @@ const Navbar = () => {
     <nav
       className={`z-50 fixed text-white font-bold shadow-md transition-all duration-300 ease-in-out ${
         scrolled
-          ? "top-0 left-0 w-full md:w-[100%] bg-bgc p-2 rounded-none"
+          ? "top-0 left-0 w-full md:w-[100%] bg-bgc  p-2 rounded-none"
           : "top-2 left-1/2 transform -translate-x-1/2 w-[70%] md:w-[80%] bg-primary p-4 rounded-lg"
       }`}
     >
@@ -39,7 +37,8 @@ const Navbar = () => {
         <ul
           className={`absolute md:static top-20 left-0 w-full md:w-auto bg-primary md:bg-transparent flex flex-col md:flex-row md:space-x-6 p-4 md:p-0 rounded-lg md:rounded-none transition-all duration-300 ease-in-out ${
             isOpen ? "block" : "hidden md:flex"
-          }`}
+          }
+              `}
         >
           {[
             "Home",
@@ -53,7 +52,10 @@ const Navbar = () => {
             <li key={item} className="p-2">
               <a
                 href={`#${item.toLowerCase()}`}
-                className="flex justify-end font-mono text-lg hover:text-bgc"
+                className={`flex justify-end font-mono text-lg  transition-colors${
+                  scrolled ? "hover:text-bgc sm:hover:text-primary " : ""
+                }
+                `}
                 onClick={handleLinkClick}
               >
                 {item}
