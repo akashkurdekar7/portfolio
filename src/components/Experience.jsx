@@ -16,13 +16,12 @@ const Experience = () => {
         {/* Image Box */}
         <div className="w-full max-w-lg p-4 bg-yellow-500 rounded-lg shadow-lg">
           <img
-            src="/mnt/data/image.png" // Replace with actual image path
+            src="../assets/experience.jpg"
             alt="Work Experience"
             className="rounded-md"
           />
           <div className="flex justify-around mt-4 text-lg font-semibold">
-            <span>• TECH INTERN</span>
-            <span>• WEB DEVELOPMENT INTERN</span>
+            <span>WEB DEVELOPMENT INTERN</span>
           </div>
         </div>
 

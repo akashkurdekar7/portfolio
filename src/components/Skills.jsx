@@ -17,18 +17,17 @@ const Skills = () => {
         {/* Programming Languages */}
         <div className="p-6 text-white bg-teal-800 rounded-lg shadow-lg w-80">
           <h3 className="mb-4 text-2xl font-semibold">PROGRAMMING LANGUAGES</h3>
-          <ul className="space-y-2 list-disc list-inside">
-            <li>C, C++, C# Programming</li>
+          <ul className="space-y-2 tracking-wide uppercase list-disc list-inside">
+            <li>C++ Programming</li>
             <li>JavaScript</li>
             <li>React.js</li>
-            <li>Next.js</li>
             <li>Angular.js</li>
             <li>Express.js</li>
+            <li>node.js</li>
             <li>Java Programming</li>
-            <li>Swift Programming</li>
-            <li>Python Programming</li>
-            <li>HTML, CSS</li>
-            <li>SQL, PL/SQL</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>SQL</li>
             <li>NoSQL</li>
           </ul>
         </div>
@@ -36,19 +35,15 @@ const Skills = () => {
         {/* Tools and Tech */}
         <div className="p-6 text-white rounded-lg shadow-lg bg-primary w-80">
           <h3 className="mb-4 text-2xl font-semibold">TOOLS AND TECH</h3>
-          <ul className="space-y-2 list-disc list-inside">
+          <ul className="space-y-2 tracking-wide uppercase list-disc list-inside">
             <li>Visual Studio Code</li>
-            <li>Visual Studio</li>
-            <li>XCode</li>
             <li>Postman</li>
-            <li>PostgreSQL</li>
             <li>SQL Server</li>
             <li>MongoDB</li>
             <li>Figma</li>
-            <li>Jira, Confluence</li>
-            <li>Bitbucket</li>
             <li>Canva</li>
-            <li>Taiga.io</li>
+            <li>word</li>
+            <li>powerpoint</li>
           </ul>
         </div>
       </div>
