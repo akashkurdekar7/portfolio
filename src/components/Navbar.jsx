@@ -20,25 +20,36 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`z-50 fixed text-white font-bold shadow-md transition-all duration-300 ease-in-out ${
-        scrolled
-          ? "top-0 left-0 w-full md:w-[100%] bg-bgc  p-2 rounded-none"
-          : "top-2 left-1/2 transform -translate-x-1/2 w-[70%] md:w-[80%] bg-primary p-4 rounded-lg"
-      }`}
+      className={`z-50 fixed font-bold shadow-md transition-all duration-300 ease-in-out
+        ${
+          scrolled
+            ? "top-0 left-0 w-full bg-primary text-bgc py-[1.618rem] rounded-none"
+            : "top-2 left-1/2 transform -translate-x-1/2 md:w-max w-full bg-bgc text-primary py-[1rem] px-[2.618rem] rounded-lg "
+        }`}
     >
-      <div className="flex items-center justify-end md:justify-center">
+      <div
+        className={`flex items-center justify-end golden-padding ${
+          scrolled ? "md:justify-evenly" : ""
+        }`}
+      >
+        {/* <h1 className="text-xl font-bold tracking-wide font-signature">
+          Akash
+        </h1> */}
+
         <button
-          className="text-4xl text-white md:hidden"
+          className={`text-4xl md:hidden  ${
+            scrolled ? "text-bgc" : "text-primary"
+          }`}
           onClick={() => setIsOpen(!isOpen)}
         >
           <FaBars />
         </button>
 
         <ul
-          className={`absolute md:static top-20 left-0 w-full md:w-auto bg-primary md:bg-transparent flex flex-col md:flex-row md:space-x-6 p-4 md:p-0 rounded-lg md:rounded-none transition-all duration-300 ease-in-out ${
-            isOpen ? "block" : "hidden md:flex"
-          }
-              `}
+          className={`absolute md:static top-32 left-0 w-full md:w-auto flex flex-col md:flex-row md:space-x-[1.618rem] gap-3 p-4 md:p-0 transition-all duration-300 ease-in-out
+            ${isOpen ? "block" : "hidden md:flex md:justify-end"}
+            ${scrolled ? "bg-primary text-bgc" : "bg-bgc text-primary"}
+          `}
         >
           {[
             "Home",
@@ -49,13 +60,10 @@ const Navbar = () => {
             "Projects",
             "Contact",
           ].map((item) => (
-            <li key={item} className="p-2">
+            <li key={item} className="p-[0.618rem]">
               <a
                 href={`#${item.toLowerCase()}`}
-                className={`flex justify-end font-mono text-lg  transition-colors${
-                  scrolled ? "hover:text-bgc sm:hover:text-primary " : ""
-                }
-                `}
+                className="text-lg font-mono transition-all hover:scale-[1.1]"
                 onClick={handleLinkClick}
               >
                 {item}

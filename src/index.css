@@ -4,11 +4,45 @@
 @tailwind components;
 @tailwind utilities;
 
-section {
-  height: 100vh;
-  padding: 1rem 5rem;
-}
-
+/* Global Styles */
 html {
   scroll-behavior: smooth;
+}
+
+/* Section Styling */
+section {
+  height: 100vh;
+  padding: 1rem 5rem; /* Default padding */
+}
+
+/* Golden Ratio Spacing */
+:root {
+  --golden-ratio: 1.618;
+}
+
+h1 {
+  font-size: calc(16px * var(--golden-ratio)); /* ≈ 26px */
+}
+
+h2 {
+  font-size: calc(
+    16px * var(--golden-ratio) * var(--golden-ratio)
+  ); /* ≈ 42px */
+}
+
+p {
+  font-size: 1rem;
+  line-height: calc(1rem * var(--golden-ratio)); /* Better readability */
+}
+
+/* Tailwind Custom Classes */
+@layer components {
+  .golden-section {
+    width: 100%;
+    height: calc(100vw / var(--golden-ratio));
+  }
+
+  .golden-padding {
+    padding: calc(1rem * var(--golden-ratio));
+  }
 }

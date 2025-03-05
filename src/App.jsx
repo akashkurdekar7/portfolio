@@ -11,12 +11,14 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <main className=" bg-bgc">
+      <main className="bg-bgc">
         <Home />
-        <About />
-        <Skills />
-        <Edu />
-        <Experience />
+        <section className="md:w-[61.8%] mx-auto golden-padding">
+          <About />
+          <Skills />
+          <Edu />
+          <Experience />
+        </section>
       </main>
       <Footer />
     </>

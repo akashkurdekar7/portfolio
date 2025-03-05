@@ -15,7 +15,7 @@ const About = () => {
         />
       </div>
 
-      <h1 className="absolute transform -translate-x-1/2 text-8xl top-24 font-signature text-primary left-1/2 w-max">
+      <h1 className="absolute text-6xl transform -translate-x-1/2 top-24 font-signature text-primary left-1/2 w-max">
         Introducing
       </h1>
       <div className="flex flex-col sm:flex-row-reverse items-center max-w-sm p-5 bg-white right-[5rem] top-[36%] max-h-sm bg-opacity-50 rounded-md transition-all duration-300 ease-in-out cursor-pointer hover:bg-black hover:bg-opacity-100 hover:text-white">

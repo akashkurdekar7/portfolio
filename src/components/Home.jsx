@@ -1,26 +1,44 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
     <section
       id="home"
-      className="flex flex-col items-center justify-center w-full h-screen pt-[80px] gap-4 "
+      className="flex flex-col items-center justify-center w-full h-screen gap-[1.618rem] text-center text-black bg-bgc golden-section"
     >
-      <h1 className="text-6xl text-center font-signature text-primary md:text-7xl lg:text-8xl xl:text-9xl">
+      <motion.h1
+        className="font-bold font-signature text-primary text-[5rem] md:text-[8.09rem] lg:text-[9.9rem]"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
         Akash Kurdekar
-      </h1>
-      <h3 className="font-serif text-3xl text-center text-purple-700 uppercase md:text-4xl lg:text-5xl">
+      </motion.h1>
+
+      <motion.h3
+        className="uppercase text-secondary text-[2.5rem] md:text-[4rem] lg:text-[5.5rem]"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.2 }}
+      >
         Portfolio
-      </h3>
-      <h2 className="p-2 text-black uppercase border-4 border-black rounded-md bg-bgc ">
-        UI and frontend developer
-      </h2>
-      {/* Three visible dots */}
-      <div className="flex items-center justify-center space-x-4 pointer-events-none">
+      </motion.h3>
+
+      <motion.h2 className="px-[1rem] py-[0.618rem] text-lg text-black uppercase border-4 border-black rounded-md bg-primary hover:scale-[1.1] transition-all">
+        UI and Frontend Developer
+      </motion.h2>
+
+      {/* Animated Dots */}
+      <motion.div
+        className="flex gap-[1.618rem]"
+        animate={{ scale: [1, 1.3, 1] }}
+        transition={{ repeat: Infinity, duration: 3 }}
+      >
         <div className="w-5 h-5 bg-black rounded-full"></div>
         <div className="w-5 h-5 bg-black rounded-full"></div>
         <div className="w-5 h-5 bg-black rounded-full"></div>
-      </div>
+      </motion.div>
     </section>
   );
 };

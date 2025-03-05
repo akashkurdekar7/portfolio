@@ -2,10 +2,7 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <section
-      id="skills"
-      className="flex flex-col items-center justify-center min-h-screen bg-[#fcebd5] p-10"
-    >
+    <section id="skills">
       {/* Title */}
       <h2 className="text-6xl font-bold text-black">
         <span className="italic text-primary font-signature">personal</span>{" "}
