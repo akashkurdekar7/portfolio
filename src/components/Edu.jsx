@@ -4,7 +4,7 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="flex flex-col justify-center p-4 text-center gap-9"
+      className="flex flex-col justify-center p-4 text-center gap-9 min-h-max"
     >
       <div className="flex flex-col items-center justify-center gap-2 md:flex-row">
         <h1 className="text-6xl font-signature text-primary sm:text-2xl md:text-5xl">
