@@ -12,7 +12,13 @@ html {
 /* Section Styling */
 section {
   height: 100vh;
-  padding: 1rem 5rem; /* Default padding */
+  padding: 1rem 5rem;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 1rem;
+  }
 }
 
 /* Golden Ratio Spacing */
@@ -44,5 +50,66 @@ p {
 
   .golden-padding {
     padding: calc(1rem * var(--golden-ratio));
+  }
+}
+
+/* Title Styling */
+.title {
+  font-family: "Brittany Signature", cursive;
+  color: #b91646;
+  text-transform: lowercase;
+  font-size: calc(
+    42px * var(--golden-ratio) * var(--golden-ratio)
+  ); /* ≈ 42px */
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: calc(
+      30px * var(--golden-ratio) * var(--golden-ratio)
+    ); /* ≈ 36px */
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: calc(
+      26px * var(--golden-ratio) * var(--golden-ratio)
+    ); /* ≈ 30px */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: calc(
+      22px * var(--golden-ratio) * var(--golden-ratio)
+    ); /* ≈ 24px */
+  }
+}
+
+/* Subtitle Styling */
+.subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: calc(46px * var(--golden-ratio)); /* ≈ 26px */
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .subtitle {
+    font-size: calc(32px * var(--golden-ratio)); /* ≈ 22px */
+  }
+}
+
+@media (max-width: 768px) {
+  .subtitle {
+    font-size: calc(28px * var(--golden-ratio)); /* ≈ 20px */
+  }
+}
+
+@media (max-width: 480px) {
+  .subtitle {
+    font-size: calc(24px * var(--golden-ratio)); /* ≈ 16px */
   }
 }

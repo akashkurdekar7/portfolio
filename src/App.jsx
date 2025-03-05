@@ -6,6 +6,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Edu from "./components/Edu";
 import Experience from "./components/Experience";
+import Projects from "./components/Projects";
 
 const App = () => {
   return (
@@ -13,12 +14,11 @@ const App = () => {
       <Navbar />
       <main className="bg-bgc">
         <Home />
-        <section className="md:w-[61.8%] mx-auto golden-padding">
-          <About />
-          <Skills />
-          <Edu />
-          <Experience />
-        </section>
+        <About />
+        <Skills />
+        <Edu />
+        <Experience />
+        <Projects />
       </main>
       <Footer />
     </>

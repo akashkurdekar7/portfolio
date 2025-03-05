@@ -5,10 +5,10 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="flex flex-col items-center justify-center w-full h-screen gap-[1.618rem] text-center text-black bg-bgc golden-section"
+      className="flex flex-col items-center justify-center w-full h-screen gap-[1.618rem] text-center text-black bg-bgc golden-section "
     >
       <motion.h1
-        className="font-bold font-signature text-primary text-[5rem] md:text-[8.09rem] lg:text-[9.9rem]"
+        className="font-bold font-signature text-primary text-[3rem] md:text-[6.09rem] lg:pt-28 lg:text-[8.9rem]"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -17,7 +17,7 @@ const Home = () => {
       </motion.h1>
 
       <motion.h3
-        className="uppercase text-secondary text-[2.5rem] md:text-[4rem] lg:text-[5.5rem]"
+        className="uppercase text-secondary text-[3rem] text-bold md:text-[8rem] lg:text-[7.5rem]"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2 }}
