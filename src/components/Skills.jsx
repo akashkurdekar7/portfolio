@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      class="flex flex-col lg:flex-row xl:flex-row lg:justify-center lg:items-center lg:gap-36"
+      class="flex flex-col lg:flex-row xl:flex-row lg:justify-center lg:items-center lg:gap-36 min-h-max"
     >
       {/* Title */}
       <div className="flex items-center justify-center py-6">
